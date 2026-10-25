@@ -1,0 +1,66 @@
+HOW TO EDIT YOUR WEBSITE
+========================
+
+The website is two files:
+  index.html       the whole page (design, text, calculator)
+  site-config.js   your details (name, phone, address, email key)
+
+Open either file in a plain text editor:
+  Windows: Notepad, or VS Code (free)
+  Mac: TextEdit in plain-text mode, or VS Code (free)
+Never open them in Word; it will break the code.
+
+
+1. YOUR DETAILS  ->  edit site-config.js
+------------------------------------------
+Type your details between the quotes and save. Example:
+
+  firmName: "Rao & Associates",
+  phone: "+91 98765 43210",
+  whatsapp: "919876543210",
+
+Keep the quotes and the comma at the end of each line.
+This fills in the header, top bar, contact card, footer, WhatsApp
+buttons and call buttons everywhere on the page.
+
+
+2. MAKE THE REQUEST FORM EMAIL YOU
+-----------------------------------
+a) Go to https://web3forms.com
+b) Enter the email address that should receive service requests.
+c) They email you an "Access Key". Copy it.
+d) Paste it into site-config.js:   web3formsKey: "your-key-here",
+e) Save, re-upload, and send yourself a test request.
+
+Until the key is added, the form tells visitors to call or WhatsApp.
+
+
+3. CHANGING TEXT ON THE PAGE  ->  edit index.html
+--------------------------------------------------
+Use Find (Ctrl+F / Cmd+F) to locate the exact words you want to
+change, then type over them. Only change the words between > and <.
+
+  Example: find  Tax filings and accounts, kept in order.
+           replace it with your own headline.
+
+Common things to find:
+  Hero headline ........ "kept in order"
+  Service cards ........ the service name, e.g. "Income tax returns"
+  Due dates table ...... "GSTR-3B for September"  (update every month)
+  FAQ answers .......... the question text, e.g. "How are your fees decided"
+  Tax slabs ............ in index.html search "NEW_SLABS" (update after
+                         every Budget; only if the government changes them)
+
+
+4. RULES TO STAY ICAI-COMPLIANT
+-------------------------------
+Do NOT add: fees or prices (even "free"), testimonials, client names,
+"why choose us", claims like "best", "100% accuracy", "10,000+ filings",
+or years of experience as a selling point. Check the current ICAI
+website guidelines before adding anything promotional.
+
+
+5. PUBLISHING CHANGES
+---------------------
+After editing, upload the folder again the same way you first did
+(see the steps Claude gave you). The site updates in about a minute.
